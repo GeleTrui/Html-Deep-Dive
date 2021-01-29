@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoslider</title>   
+    <link rel="stylesheet" href="style.css">
+    <script>let fotonummer, fotobreedte, aantalfotos, fotoslider;
+    function setupfotoslider() {
+        alert("ja het script werkt");
+        fotonummer = 0;
+        fotobreedte = 400; //breedte van mijn fotos? idk
+
+        fotoslider = document.getElementById('fotoslider');
+        let volgendeknop = document.getElementById('volgende-btn');
+        let vorigeknop = document.getElementById('vorige-button');
+        aantalfotos = fotoslider.children.lenght;
+        console.log(aantalfotos)
+    }
+    window.addEventListener('Domcontentloaded' , setupfotoslider)
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <div id="fotoslider">
+        <div class="foto"><img src="images/foto1.png" /></div>
+        <div class="foto"><img src="images/foto2.png" /></div>
+        <div class="foto"><img src="images/foto3.png" /></div>
+        <div class="foto"><img src="images/foto4.png" /></div>
+        <div class="foto"><img src="images/foto5.png" /></div>
+    </div>
+
+    <div id="controls">
+        <button id="vorige-button" class="knop">vorige</button>
+        <button id="volgende-btn" class="knop">volgende</button>
+    </div>
+</body>
+</html>
